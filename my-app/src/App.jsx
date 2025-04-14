@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Hello from './components/Test'
 import Timer from './components/useEffectTime'
+import TodoList from './components/ToDoList'
 function App() {
   const [name, setName] = useState("");
   const [text, setText] = useState("");
@@ -55,6 +56,7 @@ function App() {
       <button onClick={handleClickMul}>Mul</button>
       <button onClick={handleClickDivision}>Division</button>
       <p>{result}</p>
+      <TodoList></TodoList>
     </>
   )
 }
